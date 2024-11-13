@@ -86,6 +86,6 @@ h2 {
     }
 
     .distant-space {
-        min-height: 80px; /* Keeps at least 20px of space above footer */
+        min-height: 80px; 
     }
 }
