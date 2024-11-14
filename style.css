@@ -7,6 +7,31 @@ body {
     line-height: 1.6;
 }
 
+.text {
+    font-size: 20px;
+}
+
+.moreText {
+    display: none;
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: #333;
+    border-color:rgb(61, 113, 209);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.text.show-details .moreText {
+    display:inline;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -18,8 +43,8 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
     bottom: 0;
     width: 100%;
 }
@@ -62,6 +87,7 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 h2 {
