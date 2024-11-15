@@ -22,26 +22,26 @@ body {
 .contact-form {
     margin: 0 auto;
  
-  }
+}
   
-  .form-group {
+.form-group {
     display: grid;
     align-items: center;
     margin-bottom: 15px;
-     width: 20%;
-  }
+    width: 20%;
+}
   
-  label {
-    flex: 1; /* Make the label take up a consistent width */
+label {
+    flex: 1; 
     padding-right: 10px;
    
-  }
+}
   
-  input, textarea {
-    flex: 2; /* Make the input field take up more space */
+input, textarea {
+    flex: 2; 
     padding: 8px;
     width: 100%;
-  }
+}
 
 .button {
     padding: 15px 25px;
@@ -154,5 +154,34 @@ h2 {
     .distant-space {
         min-height: 80px; 
     }
+
+    .contact-form {
+        margin: 0 auto;
+     
+    }
+      
+    .form-group {
+        display: grid;
+        align-items: center;
+        margin-bottom: 15px;
+        width: 20%;
+    }
+      
+    label {
+        flex: 1; 
+        padding-right: 10px;
+       
+    }
+      
+    input, textarea {
+        flex: 1;
+        padding: 8px;
+        width: 200%;
+    }
+
+    #message {
+        width: 400%;
+    }
+
 }
 
