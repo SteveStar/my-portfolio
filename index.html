@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97bd197926.js" crossorigin="anonymous"></script>
     
     <title>Portfolio</title>
 </head>
@@ -50,13 +51,37 @@
 
     <!-- Contact Section -->
     <section class="sections" id="contact">
-        <h2>Contact Me</h2>
-        <button class="button" type="button" onclick="extraDetails(event)">Show Details</button>
-        <p class = "text">In the future, this will be a contact form. For now, just leave this as a placeholder.
-            
-        </p>
-        
-    </section>
+    <h2>Contact Me</h2>
+    <p class="text">You can reach me here, send me an email or reach out on one of my platforms.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email-field" spellcheck="false" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+                
+            </form>
+        <div class="media-icons">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+
+</section>
 
     <div id="space"></div>
 
@@ -67,5 +92,11 @@
         </footer>
     </div>
     <script src="script.js"></script>
+    <script src="emailValid.js"></script>
+
+<script>
+
+</script>
+
 </body>
 </html>
