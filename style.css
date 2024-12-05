@@ -1,4 +1,8 @@
-/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+
 :root {
     --background-color: #f4f4f4;
     --header-footer-color: #414fc9;
@@ -16,7 +20,7 @@
     --word-color: #ffffff;;
     --title-color: #929292;
     --box-shadows: 0 0 10px rgba(255, 255, 255, 0.673);
-    --media-icons: #191a1c;
+    --media-icons: #561414;
     --text-color: #ffffff;
 }
 
@@ -31,6 +35,29 @@ body {
 p {
     color: var(--text-color);
 }
+
+.imagesEx img{
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadows);
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.text-box p{
+    display: inline-block;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadows);
+    padding: 10px;
+    margin: 20px;
+}
+
+.text-box, .imagesEx {
+    display: block;
+}
+
 
 .text {
     font-size: 20px;
@@ -138,8 +165,7 @@ section {
     margin: 20px;
     background-color: var(--background-color);
     border-radius: 8px;
-    box-shadow: var(--box-shadows);
-    
+    box-shadow: var(--box-shadows); 
 }
 
 h2 {
