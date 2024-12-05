@@ -12,7 +12,9 @@ html {
     --box-shadows: 0 0 10px rgba(0, 0, 0, 0.673);
     --media-icons: #32adbd;
     --text-color: #000000;
+    --submission-form: #000000;
 }
+
 .darkmode {
     --background-color: #070b1d;
     --header-footer-color: #101425;
@@ -20,8 +22,9 @@ html {
     --word-color: #ffffff;;
     --title-color: #929292;
     --box-shadows: 0 0 10px rgba(255, 255, 255, 0.673);
-    --media-icons: #561414;
+    --media-icons: #c3b13b;
     --text-color: #ffffff;
+    --submission-form: #c3b13b;
 }
 
 body {
@@ -34,6 +37,10 @@ body {
 
 p {
     color: var(--text-color);
+}
+
+.form-group {
+    color: var(--submission-form);
 }
 
 .imagesEx img{
@@ -152,7 +159,7 @@ nav ul li a::after {
     bottom: -2px;
     width: 0;
     height: 2px; 
-    background-color: var(--background-color); 
+    background-color: var(--word-color); 
     transition: width 0.3s ease; 
 }
 
