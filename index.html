@@ -8,7 +8,7 @@
     
     <title>Portfolio</title>
 </head>
-<body>
+<body class="darkmode">
     <header>
         <h1>Steve's Portfolio</h1>
         <nav>
@@ -16,8 +16,15 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
+        <div>
+            <button class="darkModeButton">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
     </header>
 
     <section class="sections" id="about">
@@ -71,7 +78,7 @@
                     <textarea id="message" name="message"></textarea>
                 </div>
                 
-                <button type="submit">Submit</button>
+                <button class='button' type="submit">Submit</button>
                 
             </form>
         <div class="media-icons">
@@ -93,10 +100,7 @@
     </div>
     <script src="script.js"></script>
     <script src="emailValid.js"></script>
-
-<script>
-
-</script>
+    <script src="darkSwitch.js"></script>
 
 </body>
 </html>

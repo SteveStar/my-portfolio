@@ -1,10 +1,35 @@
 /* General Styles */
+:root {
+    --background-color: #f4f4f4;
+    --header-footer-color: #414fc9;
+    --button-color: #c3b13b;
+    --word-color: #f4f4f4;
+    --title-color: #3f78e9;
+    --box-shadows: 0 0 10px rgba(0, 0, 0, 0.673);
+    --media-icons: #32adbd;
+    --text-color: #000000;
+}
+.darkmode {
+    --background-color: #070b1d;
+    --header-footer-color: #101425;
+    --button-color: #16243e;
+    --word-color: #ffffff;;
+    --title-color: #929292;
+    --box-shadows: 0 0 10px rgba(255, 255, 255, 0.673);
+    --media-icons: #191a1c;
+    --text-color: #ffffff;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--background-color);
     line-height: 1.6;
+}
+
+p {
+    color: var(--text-color);
 }
 
 .text {
@@ -45,12 +70,11 @@ input, textarea {
 
 .button {
     padding: 15px 25px;
-    background-color: #333;
-    border-color:rgb(61, 113, 209);
+    background-color: var(--button-color);
     border: none;
     outline: none;
     cursor: pointer;
-    color:rgb(255, 255, 255);
+    color: var(--word-color);
     font-size: 15px;
     font-weight: bold;
     border-radius: 10px;
@@ -61,15 +85,15 @@ input, textarea {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-footer-color);
+    color: var(--word-color);
     padding: 20px;
     text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-footer-color);
+    color: var(--word-color);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -89,7 +113,7 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color: white;
+    color: var(--word-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -101,7 +125,7 @@ nav ul li a::after {
     bottom: -2px;
     width: 0;
     height: 2px; 
-    background-color: white; 
+    background-color: var(--background-color); 
     transition: width 0.3s ease; 
 }
 
@@ -112,22 +136,51 @@ nav ul li a:hover::after {
 section {
     padding: 20px;
     margin: 20px;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadows);
     
 }
 
 h2 {
-    color: #333;
+    color: var(--title-color);
 }
 
 .media-icons a {
     font-size: 3em; 
     text-decoration: none; 
-    color:#12112a; 
+    color: var(--media-icons); 
     display: inline;
     padding-right: 10px;
+}
+
+.darkModeButton {
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #5d5d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    color: #888888;
+}
+
+.darkModeButton i:last-child {
+    display: none;
+}
+
+.darkmode .darkModeButton i:first-child{
+    display: none;
+}
+
+.darkmode .darkModeButton i:last-child {
+    display: block;
 }
 
 #email-error {
@@ -184,4 +237,3 @@ h2 {
     }
 
 }
-
