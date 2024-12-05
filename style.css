@@ -154,7 +154,7 @@ h2 {
     padding-right: 10px;
 }
 
-.darkModeButton {
+#darkModeButton {
     font-size: 32px;
     height: 50px;
     width: 50px;
@@ -169,17 +169,18 @@ h2 {
     right: 20px;
     border: none;
     color: #888888;
+    cursor: pointer;
 }
 
-.darkModeButton i:last-child {
+#darkModeButton i:last-child {
     display: none;
 }
 
-.darkmode .darkModeButton i:first-child{
+#darkmode .darkModeButton i:first-child{
     display: none;
 }
 
-.darkmode .darkModeButton i:last-child {
+#darkmode .darkModeButton i:last-child {
     display: block;
 }
 
